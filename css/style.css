@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,*::before{
+    box-sizing: inherit;
+}
+html{
+    background:  rgb(111, 111, 240);
+    padding: 0 1rem;
+    padding-top: 1.5rem;
+}
+body{
+    min-height: 90vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: aliceblue;
+   
+    
+ 
+}
+.control{
+    flex-basis: 100%;
+}
+.red-filter i{
+    color: red;
+}
+.video{
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   max-height: 20vh;
+   max-width: 20vw;
+}
+.btn{
+    padding: .5rem;
+}
+.take-photo:hover{
+    background-color: rgb(111, 111, 240);;
+    cursor: pointer;
+    
+}
+.strip{
+    padding: 1rem;
+    flex-basis: 100%;
+    background-color:white;
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-self: flex-end;
+    bottom: 0;
+    min-width: 100%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 11rem;
+   
+    
+}
+
+.strip img{
+    width: 5rem; 
+    
+}
