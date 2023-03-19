@@ -109,7 +109,7 @@ const greenScreen = function(pixels){
             green <= levels.greenmax && green >= levels.greenmin &&
             blue <= levels.bluemax && blue >= levels.bluemin ){
                 pixels.data[i+3]=0;
-                console.log('out')
+                console.log('out' + i)
                 console.log(pixels.data[i+3])
             }
         return pixels;
@@ -123,3 +123,4 @@ imageGreenScreen.addEventListener('input',(e)=>{
     }
 })
 
+console.log(sliders);
