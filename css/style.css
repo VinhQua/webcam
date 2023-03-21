@@ -22,8 +22,14 @@ body{
     
  
 }
+
 .control{
     flex-basis: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10%;
 }
 .red-filter i{
     color: red;
@@ -64,5 +70,22 @@ body{
 
 .strip img{
     width: 5rem; 
+    
+}
+@media (max-width:1200px) {
+    canvas{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+}
+@media (max-width:768px) {
+    canvas{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .control{
+        padding-top: 3rem;
+    }
     
 }
